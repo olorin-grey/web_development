@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Textarea element</title>
+  </head>
+  <body>
+      <hr>
+      <form action="submission.html" method="POST">
+        <h1>Create Your Own Steak</h1>
+          <section class="protein">
+          <label for="meat">What type of protein would you like?</label>
+          <input type="text" name="meat" id="meat">
+        </section>
+        <hr>
+        <section class="meat">
+          <label for="amount">How many would you like?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+        <section class="cooked">
+          <label for="doneness">How do you want your protein cooked</label>
+          <br>
+          <span>Rare</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>Well-Done</span>
+        </section>
+        <hr>
+        <section class="toppings">
+          <span>What sides would you like?</span>
+          <br>
+          <input type="checkbox" name="topping" id="kale" value="kale">
+          <label for="lettuce">Kale</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Cherry Tomatoes</label>
+          <input type="checkbox" name="topping" id="potato" value="potato">
+          <label for="onion">Mashed Red Potatoes</label>
+        </section>
+        <hr>
+        <section class="cheesy">
+          <span>Would you like to add a side of cheese?</span>
+          <br>
+          <input type="radio" name="cheese" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="cheese" id="no" value="yes">
+          <label for="no">No</label>
+        </section>
+        <hr>
+        <section class="bread">
+          <label for="bun">What kind of bread would you like?</label>
+          <select name="bun" id="bun">
+            <option value="rosemary">Rosemary</option>
+            <option value="sourdough">Sourdough</option>
+            <option value="daves-bread">Dave's Killer Bread</option>
+          </select>
+        </section>
+        <hr>
+        <section class="sauce-selection">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="steak"></option>
+            <option value="spicey-mustard"></option>
+            <option value="blue-cheese"></option>
+          </datalist>
+        </section>
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+        
+      </form>
+    </section>
+  </body>
+</html>
